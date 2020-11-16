@@ -6,8 +6,10 @@
 
 var listaCognomi = ["Rossi", "Busellato", "Fogo", "Dal Pozzolo", "Boschiero", "Aiello", "Dal Santo", "Oro", "Di Barbora", "Sartori"];
 
-var cognomeUtente = prompt("Inserisci il tuo cognome");
-listaCognomi.push(cognomeUtente = cognomeUtente[0].toUpperCase() + cognomeUtente.slice(1));
+var inputUtente = prompt("Inserisci il tuo cognome");
+var cognome = inputUtente = inputUtente[0].toUpperCase() + inputUtente.slice(1);
+
+listaCognomi.push(cognome);
 
 // faccio in modo che la lista dei cognomi venga ordinata alfabeticamente
 listaCognomi.sort();
@@ -20,6 +22,6 @@ for (var i = 0; i < listaCognomi.length; i++) {
 }
 
 // aggiungo la posizione dell'Utente all'interno della lista
-var posizioneUtenteNuovo = (listaCognomi.indexOf(cognomeUtente)) + 1;
+var posizioneUtenteNuovo = (listaCognomi.indexOf(cognome)) + 1;
 
 var position = document.getElementById("position").innerHTML = "Sei il numero " + "<span class='red'>" + posizioneUtenteNuovo + "</span>" + " della lista.";
