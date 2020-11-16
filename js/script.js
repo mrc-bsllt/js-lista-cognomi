@@ -12,16 +12,14 @@ listaCognomi.push(cognomeUtente);
 // faccio in modo che la lista dei cognomi venga ordinata alfabeticamente
 listaCognomi.sort();
 
-var listaCognomiScritta = document.getElementById("surname_list");
+var surname_list = document.getElementById("surname_list");
 
 // scrivo nella pagina la lista dei cognomi nell'ordine dell'Array
 for (var i = 0; i < listaCognomi.length; i++) {
-  listaCognomiScritta.innerHTML += "<li>" + listaCognomi[i] + "</li>";
+  surname_list.innerHTML += "<li>" + listaCognomi[i] + "</li>";
 }
 
 // aggiungo la posizione dell'Utente all'interno della lista
 var posizioneUtenteNuovo = (listaCognomi.indexOf(cognomeUtente)) + 1;
 
 var position = document.getElementById("position").innerHTML = "Sei il numero " + "<span class='red'>" + posizioneUtenteNuovo + "</span>" + " della lista.";
-
-console.log(position);
