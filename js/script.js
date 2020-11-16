@@ -22,4 +22,6 @@ for (var i = 0; i < listaCognomi.length; i++) {
 // aggiungo la posizione dell'Utente all'interno della lista
 var posizioneUtenteNuovo = (listaCognomi.indexOf(cognomeUtente)) + 1;
 
-var position = document.getElementById("position").innerHTML = "Sei il numero " + posizioneUtenteNuovo + " della lista.";
+var position = document.getElementById("position").innerHTML = "Sei il numero " + "<span class='red'>" + posizioneUtenteNuovo + "</span>" + " della lista.";
+
+console.log(position);
