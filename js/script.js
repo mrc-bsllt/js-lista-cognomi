@@ -18,5 +18,8 @@ var listaCognomiScritta = document.getElementById("surname_list");
 for (var i = 0; i < listaCognomi.length; i++) {
   listaCognomiScritta.innerHTML += "<li>" + listaCognomi[i] + "</li>";
 }
+
+// aggiungo la posizione dell'Utente all'interno della lista
 var posizioneUtenteNuovo = (listaCognomi.indexOf(cognomeUtente)) + 1;
-console.log(posizioneUtenteNuovo);
+
+var position = document.getElementById("position").innerHTML = "Sei il numero " + posizioneUtenteNuovo + " della lista.";
