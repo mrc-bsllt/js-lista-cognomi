@@ -18,3 +18,5 @@ var listaCognomiScritta = document.getElementById("surname_list");
 for (var i = 0; i < listaCognomi.length; i++) {
   listaCognomiScritta.innerHTML += "<li>" + listaCognomi[i] + "</li>";
 }
+var posizioneUtenteNuovo = (listaCognomi.indexOf(cognomeUtente)) + 1;
+console.log(posizioneUtenteNuovo);
