@@ -7,7 +7,7 @@
 var listaCognomi = ["Rossi", "Busellato", "Fogo", "Dal Pozzolo", "Boschiero", "Aiello", "Dal Santo", "Oro", "Di Barbora", "Sartori"];
 
 var cognomeUtente = prompt("Inserisci il tuo cognome");
-listaCognomi.push(cognomeUtente);
+listaCognomi.push(cognomeUtente = cognomeUtente[0].toUpperCase() + cognomeUtente.slice(1));
 
 // faccio in modo che la lista dei cognomi venga ordinata alfabeticamente
 listaCognomi.sort();
